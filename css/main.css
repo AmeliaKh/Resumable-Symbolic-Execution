@@ -72,7 +72,7 @@ body > nav {
 
 
 #description {
-  margin-top: 60px;
+  margin-top: 0px;
 }
 
 #social-media {
@@ -120,6 +120,13 @@ body > nav {
 
 #about > .container-fluid > .row > .col-md-4 > img {
   border-radius: 50%;
+}
+
+#contact {
+  padding: 8% 8% 0 8%;
+  background-color: #222;
+  height: 100vh;
+  color: #222;
 }
 
 #symbolic-execution {
@@ -203,7 +210,7 @@ body > nav {
 }
 
 #pseudo > .container-fluid > .col-md-12 > a {
-  transition-duration: 0.2s;
+  transition-duration: 0s;
 }
 
 .project {
@@ -235,12 +242,6 @@ body > nav {
   font-weight: bold;
 }
 
-#contact {
-  padding: 8% 8% 0 8%;
-  background-color: #eef4fc;
-  height: 100vh;
-  color: #222;
-}
 
 .footer > .container {
   padding-right: 15px;
@@ -274,6 +275,13 @@ body > nav {
   background-color: #abbddb;
 }
 
+/*
+
+
+
+
+
+
 #downloadcv > div > button {
   background-color: #6dd280;
   border: 1px solid white;
@@ -282,6 +290,8 @@ body > nav {
 
 
 
+
+ */
 
 
 #header {
@@ -296,8 +306,8 @@ body > nav {
 
 #header > .container-fluid > .terminal-window {
   text-align: left;
-  width: 600px;
-  height: 360px;
+  width: inherit;
+  height: 860px;
   border-radius: 10px;
   margin: auto;
   position: relative;
@@ -321,7 +331,7 @@ body > nav {
 #header > .container-fluid > .terminal-window section.terminal {
   color: white;
   font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
-  font-size: 20pt;
+  font-size: 5vw;
   padding: 10px;
   box-sizing: border-box;
   position: absolute;
