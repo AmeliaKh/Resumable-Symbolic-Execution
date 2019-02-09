@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-inverse navbar-toggleable-md navbar-bg-inverse fixed-top" style="background-color: #E0E8F0">
+    <nav class="navbar navbar-inverse navbar-toggleable-md navbar-bg-inverse fixed-top" style="background-color: #eef4fc; box-shadow: none;">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -126,10 +126,25 @@
     <section id="pseudo">
       <div class="container-fluid">
         <h1>Pseudocode</h1>
+      </br>
         <div class="spacer"></div>
-        <p><b><a href="https://www.doc.ic.ac.uk/~cristic/papers/klee-osdi-08.pdf" target="_blank">Klee Paper</a></b></p>
+          <div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>
+          <span class="lineno"> 1 </span>  <span class="type">int</span> <span class="name">get_sign</span><span class="syntax">(</span><span class="type">int</span><span class="variable"> x</span><span class="syntax">) {</span>
+          <span class="lineno"> 2 </span>	  <span class="flow">if</span> <span class="syntax">(</span><span class="variable">x</span> <span class="equals">==</span> <span class="constant">0</span><span class="syntax">)</span>
+          <span class="lineno"> 3 </span> 		 <span class="flow">return</span> <span class="constant">0</span><span class="syntax">;</span>
+          <span class="lineno"> 4 </span>
+          <span class="lineno"> 5 </span>	  <span class="flow">if</span> <span class="syntax">(</span><span class="variable">x</span> <span class="equals"><</span> <span class="constant">0</span><span class="syntax">)</span>
+          <span class="lineno"> 6 </span> 		 <span class="flow">return</span> <span class="constant">-1</span><span class="syntax">;</span>
+          <span class="lineno"> 7 </span>
+          <span class="lineno"> 8 </span>	  <span class="flow">else</span>
+          <span class="lineno"> 9 </span> 		 <span class="flow">return</span> <span class="constant">1</span><span class="syntax">;</span>
+          <span class="lineno">10 </span>
+          <span class="lineno">11 </span>  <span class="type">int</span> <span class="name">main</span><span class="syntax">() {</span>
+          <span class="lineno">12 </span> 		 <span class="type">int</span> <span class="variable">a</span><span class="syntax">;</span>
+          <span class="lineno">13 </span>      <span class="name">klee_make_symbolic</span><span class="syntax">(&</span><span class="variable">a</span><span class="syntax">, sizeof(</span><span class="variable">a</span><span class="syntax">),</span> <span class="str">"a"</span><span class="syntax">);</span>
+          <span class="lineno">14 </span>      <span class="flow">return</span> <span class="constant">0</span><span class="syntax">;</span>
+</pre></div>
 
-      </div>
 
     </section>
 

@@ -329,7 +329,7 @@ body > nav {
 }
 
 #header > .container-fluid > .terminal-window section.terminal {
-  color: #91a4c2;
+  color: #fff;
   font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
   font-size: 5vw;
   padding: 10px;
@@ -365,3 +365,77 @@ body > nav {
 
 .terminal-data { display: none; }
 .terminal-window .gray { color: gray; }
+
+
+
+
+
+
+.mw-content-ltr {
+    direction: ltr;
+}
+
+
+.mw-highlight.mw-content-ltr .lineno {
+    float: left;
+}
+
+.mw-highlight pre {
+    tab-size: 4;
+}
+
+pre, .mw-code {
+    line-height: 1.3em;
+}
+
+pre, .mw-code {
+    color: #8c8383;
+    background-color: #f8f9fa;
+    border: 1px solid #eaecf0;
+    padding: 1em;
+    white-space: pre-wrap;
+}
+
+
+pre, code, tt, kbd, samp, .mw-code {
+    font-family: monospace,monospace;
+}
+
+pre, xmp, plaintext, listing {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+}
+
+
+.mw-content-ltr {
+    direction: ltr;
+}
+
+
+.mw-highlight .type {
+    color: #f761a4;
+}
+
+
+.mw-highlight .name {
+    color: #3c12d6;
+}
+
+.mw-highlight .syntax {
+    color: #747277;
+    font-weight: bold;
+}
+
+.mw-highlight .equals {
+    color: #747277;
+}
+
+.mw-highlight .variable {
+    color: #1e9cd0;
+}
+
+.mw-highlight .str {
+    color: #118c4a;
+}
