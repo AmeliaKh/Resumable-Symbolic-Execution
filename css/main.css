@@ -314,7 +314,7 @@ body > nav {
 }
 
 #header > .container-fluid > .terminal-window header {
-  background: #E0E8F0;
+  background: #91a4c2;
   height: 30px;
   border-radius: 8px 8px 0 0;
   padding-left: 10px;
@@ -329,7 +329,7 @@ body > nav {
 }
 
 #header > .container-fluid > .terminal-window section.terminal {
-  color: white;
+  color: #91a4c2;
   font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
   font-size: 5vw;
   padding: 10px;
