@@ -51,10 +51,10 @@
             <a class="nav-link" href="#symbolic-execution">Symbolic Execution</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#history">SE History</a>
+            <a class="nav-link" href="#history">Resumable Symbolic Execution</a>
           </li>
           <li class="nav-item">
-           <a class="nav-link" href="#pseudo">pseudo</a>
+           <a class="nav-link" href="#pseudo">Code</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#links">Links</a>
@@ -109,19 +109,21 @@
     <section id="symbolic-execution">
       <div class="container-fluid">
         <h1>Symbolic Execution</h1>
-        <div class="spacer"></div>
-        </div>
-
-        </div>
+        <div class="spacer"></div>    
+        <p>Symbolic execution is a method of auto-testing a program by passing in variable inputs to a function. Then, using abstract interpretation of the program, when a conditional is reached, it will branch, limiting the scope of the variable input to that which either causes a true or false outcome from the if statement, depending on the requirements of that branch.
+		The current best implementation of this system is the KLEE program, which has been used to test Unix library files and has achieved high levels of coverage and was able to find several bugs within the code and then provided test cases based on the scope of the various inputs at that particular branch.
+		Symbolic execution itself has been around since the 1970s, when it was first propounded in the paper on the SELECT system by Boyer, Elspas and Levitt. In the beginning however, it faced several major difficulties.
+		The main difficulty impeding further development was that symbolic execution is very resource intensive and computers at the time were just not powerful enough to run the process.
+		The other major issue was underdeveloped searching heuristics and optimisations in pruning branches of the program dynamically.
+		By 2008 however, when the KLEE paper was published, computing power had greatly increased and many more optimisations were available to them than were around in the 1970s. This allowed for vastly improved program coverage, reaching up to 99% of some files when tested and being capable of handling code in the thousands of lines, instead of the simple programs previously testable.
+		</p>
       </div>
     </section>
 
     <section id="history">
       <div class="container-fluid" style="color:#FFFFFF;">
-        <h1>History of Symbolic Execution</h1>
+        <h1>Resumable Symbolic Execution</h1>
         <div class="spacer"></div>
-        <p><b><a href="https://www.doc.ic.ac.uk/~cristic/papers/klee-osdi-08.pdf" target="_blank">Klee Paper</a></b></p>
-        <p>As a concept, Symbolic Execution has existed since the 1970s, however could never be implemented in practice due to slow computers and lack of memory. However, since 2008, a combination of higher computational performance and demand led to the development of KLEE, an automatic test generator for large coverage of edge cases and bug searching. KLEE works on the intermediate representation of C, to find bugs and execute all the possible paths of program input.</p>
       </div>
     </section>
 
@@ -129,10 +131,7 @@
       <div class="container-fluid">
         <h1>Pseudocode</h1>
         <div class="spacer"></div>
-        <p><b><a href="https://www.doc.ic.ac.uk/~cristic/papers/klee-osdi-08.pdf" target="_blank">Klee Paper</a></b></p>
-
       </div>
-
     </section>
 
     <section id="links">
@@ -140,6 +139,7 @@
         <h1>Links</h1>
         <div class="spacer"></div>
         <p><b><a href="https://www.doc.ic.ac.uk/~cristic/papers/klee-osdi-08.pdf" target="_blank">Klee Paper</a></b></p>
+        <p><b><a href="http://delivery.acm.org/10.1145/810000/808445/p234-boyer.pdf?ip=146.169.175.6&id=808445&acc=ACTIVE%20SERVICE&key=BF07A2EE685417C5%2EF5014A9D3D5CC2D9%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1549728133_00810472296bf5a52cfc95a9b20081ed" target="_blank">SELECT Paper</a></b></p>
 
     </section>
     <section id="contact">
