@@ -405,7 +405,7 @@ pre, xmp, plaintext, listing {
     display: block;
     font-family: monospace;
     white-space: pre;
-    margin: 1em 0px;
+    margin: 1.0em 0px;
 }
 
 
