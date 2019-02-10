@@ -4,7 +4,6 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
   min-height: 100%;
   margin-bottom: 60px;
   background-color: #30353A;
@@ -14,8 +13,6 @@ body {
 ul, ol {
   list-style-type: none;
 }
-
-
 
 .terminal-window header .button {
   width: 12px;
@@ -36,7 +33,6 @@ ul, ol {
 .terminal-window header .button.red {
   background: #E75448;
 }
-
 
 body > nav {
   transition-duration: 0.4s;
@@ -62,14 +58,6 @@ body > nav {
   color: #222;
   transition-duration: 0.4s;
 }
-
-
-
-
-
-
-
-
 
 #description {
   margin-top: 0px;
@@ -120,13 +108,6 @@ body > nav {
 
 #about > .container-fluid > .row > .col-md-4 > img {
   border-radius: 50%;
-}
-
-#contact {
-  padding: 8% 8% 0 8%;
-  background-color: #222;
-  height: 100vh;
-  color: #222;
 }
 
 #symbolic-execution {
@@ -275,25 +256,6 @@ body > nav {
   background-color: #abbddb;
 }
 
-/*
-
-
-
-
-
-
-#downloadcv > div > button {
-  background-color: #6dd280;
-  border: 1px solid white;
-}
-
-
-
-
-
- */
-
-
 #header {
   padding-top: 25vh;
   height: 100vh;
@@ -366,15 +328,9 @@ body > nav {
 .terminal-data { display: none; }
 .terminal-window .gray { color: gray; }
 
-
-
-
-
-
 .mw-content-ltr {
     direction: ltr;
 }
-
 
 .mw-highlight.mw-content-ltr .lineno {
     float: left;
@@ -396,7 +352,6 @@ pre, .mw-code {
     white-space: pre-wrap;
 }
 
-
 pre, code, tt, kbd, samp, .mw-code {
     font-family: monospace,monospace;
 }
@@ -408,16 +363,13 @@ pre, xmp, plaintext, listing {
     margin: 1.0em 0px;
 }
 
-
 .mw-content-ltr {
     direction: ltr;
 }
 
-
 .mw-highlight .type {
     color: #f761a4;
 }
-
 
 .mw-highlight .name {
     color: #3c12d6;
