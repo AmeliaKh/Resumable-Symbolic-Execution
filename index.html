@@ -1,59 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Resumable Symbolic Execution</title>
+    <title>Frank Busse | Resumable Symbolic Execution</title>
     <link rel="icon" href="./assets/fbIconLight192x192.png">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-    <!-- FontAwesome -->
-    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-
     <link rel="stylesheet" href="./css/main.css">
-    <!-- <link rel="stylesheet" href="./css/timeline.css"> -->
-
   </head>
+
   <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-inverse navbar-toggleable-md navbar-bg-inverse fixed-top" style="background-color: #eef4fc; box-shadow: none;">
+    <nav class="navbar navbar-inverse navbar-toggleable-md navbar-bg-inverse fixed-top">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-
       <div class="navbar-brand" href="#">frank<strong>busse</strong>
         <br>
         <div class ="container-fluid text-left">
-
-
-          <a href="https://twitter.com/f_busse" target="_blank"><i class="fab fa-twitter fa-xs" ></i></a>
-          <a href="https://github.com/251" target="_blank"><i class="fab fa-github fa-xs" style="color:#000;"></i></a>
-          <a href="mailto:f.busse17@imperial.ac.uk" target="_blank"><i class="fas fa-at fa-xs" style="color:#E75448;"></i></a>
-          <a href="http://klee.github.io" target="_blank"><i class="fas fa-atom fa-xs"></i></a>
+          <a href="https://twitter.com/f_busse" target="_blank"><i class="fab fa-twitter fa-xs"></i></a>
+          <a href="https://github.com/251" target="_blank"><i class="fab fa-github fa-xs"></i></a>
+          <a href="mailto:f.busse17@imperial.ac.uk" target="_blank"><i class="fas fa-at fa-xs"></i></a>
+          <a href="http://klee.github.io" target="_blank"><img class="klee-icon" src="./assets/kleeIcon192x192.png" style="width:26px;height:26px;"></a>
         </div>
       </div>
-      </div>
 
-      <!-- <a class="navbar-brand" href="#">Frank<strong>Busse</strong></a> -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#about">About Frank</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#symbolic-execution">Symbolic Execution</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#history">Resumable Symbolic Execution</a>
+            <a class="nav-link" href="#resumable">Resumable Symbolic Execution</a>
           </li>
           <li class="nav-item">
-           <a class="nav-link" href="#pseudo">Code</a>
+            <a class="nav-link" href="#pseudo">Pseudocode</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#links">Links</a>
@@ -62,40 +46,31 @@
       </div>
     </nav>
 
-
     <section id="header">
       <div class="container-fluid text-center" id="description">
         <div class="terminal-window">
-        <section class="terminal">
-          <div class="historyterm"></div>
-          $&nbsp;<span class="prompt"></span>
-          <span class="typed-cursor"></span>
-
-        </section>
+          <section class="terminal">
+            <div class="historyterm"></div>
+            $&nbsp;<span class="prompt"></span>
+            <span class="typed-cursor"></span>
+          </section>
+        </div>
       </div>
-    </div>
-        <!-- <h1 style="font-size: 4.5em">Resumable Symbolic Execution</h1>
-        <h2>Frank Busse</h2><br> -->
-
     </section>
+
     <section id="about">
       <div class="container-fluid">
-
-        <div style="width: 100px;">
-        </br>
-      </br>
-          <h1>About</h1>
-          <div class="spacer"></div>
-        </div>
-
+        <br><br>
+        <h1>About</h1>
+        <div class="spacer-white"></div>
+        <br>
         <div class="row">
           <div class="col-md-8">
-            <h2>...</h2>
-            <h3>...</h3>
             <div style="color:#FFFFFF;">
-              <p><strong>Frank is a doctoral student in the Department of Computing at Imperial College London, </strong>and holds a Diploma in Computer Science from Technische Universität Dresden. He found particular interest in Symbolic Execution, software analysis and testing, so he decided to continue expanding his knowledge on it later on in his life. Previously, Frank had worked as a Research Assistant for the System Engineering Group at his university. He had taught for several years as well, but decided to do more research instead.</p>
+              <p><strong>Frank is a doctoral student in the Department of Computing at Imperial College London, </strong>and holds a Diploma in Computer Science from the Technische Universität Dresden. He found particular interest in Symbolic Execution, software analysis and testing, so decided to continue expanding his knowledge of it later on in his life.
+                Previously, Frank had worked as a Research Assistant for the System Engineering Group at his university. He had taught for several years as well, but decided to do more research instead.</p>
               <p>Frank finds enjoyment in his PhD research, since it allows him to explore new ideas without the pressure of industry, which he otherwise finds rather stressful. He works in the Software Reliability Group under the supervision of Dr Cristian Cadar, who is responsible for developing the KLEE system, which forms the basis of Frank’s PhD research.</p>
-            </br>
+              <br>
             </div>
           </div>
           <div class="col-md-4 d-flex h-150 justify-content-center align-items-center">
@@ -107,64 +82,71 @@
 
     <section id="symbolic-execution">
       <div class="container-fluid">
-      </br>
-    </br>
+        <br><br>
         <h1>Symbolic Execution</h1>
-        <div class="spacer"></div>
-        <p>Symbolic execution is a method of auto-testing a program by passing in variable inputs to a function. Then, using abstract interpretation of the program, when a conditional is reached, it will branch, limiting the scope of the variable input to that which either causes a true or false outcome from the if statement, depending on the requirements of that branch.
-		The current best implementation of this system is the KLEE program, which has been used to test Unix library files and has achieved high levels of coverage and was able to find several bugs within the code and then provided test cases based on the scope of the various inputs at that particular branch.
-		Symbolic execution itself has been around since the 1970s, when it was first propounded in the paper on the SELECT system by Boyer, Elspas and Levitt. In the beginning however, it faced several major difficulties.
-		The main difficulty impeding further development was that symbolic execution is very resource intensive and computers at the time were just not powerful enough to run the process.
-		The other major issue was underdeveloped searching heuristics and optimisations in pruning branches of the program dynamically.
-		By 2008 however, when the KLEE paper was published, computing power had greatly increased and many more optimisations were available to them than were around in the 1970s. This allowed for vastly improved program coverage, reaching up to 99% of some files when tested and being capable of handling code in the thousands of lines, instead of the simple programs previously testable.
-		</p>
+        <div class="spacer-black"></div>
+        <br>
+        <p><strong>Symbolic execution is a method of auto-testing a program by passing in variable inputs to a function.</strong> Then, using abstract interpretation of the program, when a conditional is reached, it will branch, limiting the scope of the variable input to that which either causes a true or false outcome from the if statement, depending on the requirements of that branch.
+          The current best implementation of this system is the KLEE program, which has been used to test Unix library files and has achieved high levels of coverage and was able to find several bugs within the code and then provided test cases based on the scope of the various inputs at that particular branch.
+          Symbolic execution itself has been around since the 1970s, when it was first propounded in the paper on the SELECT system by Boyer, Elspas and Levitt.</p>
+        <p>In the beginning however, it faced several major difficulties.
+          The main difficulty impeding further development was that symbolic execution is very resource intensive and computers at the time were just not powerful enough to run the process.
+          The other major issue was underdeveloped searching heuristics and optimisations in pruning branches of the program dynamically.
+          By 2008 however, when the KLEE paper was published, computing power had greatly increased and many more optimisations were available to them than were around in the 1970s. This allowed for vastly improved program coverage, reaching up to 99% of some files when tested and being capable of handling code in the thousands of lines, instead of the simple programs previously testable.
+        </p>
       </div>
     </section>
 
-    <section id="history">
-      <div class="container-fluid" style="color:#FFFFFF;">
-      </br>
-    </br>
+    <section id="resumable">
+      <div class="container-fluid">
+        <br><br>
         <h1>Resumable Symbolic Execution</h1>
-        <div class="spacer"></div>
+        <div class="spacer-white"></div>
+        <br>
+        <p><strong>The main obstacle to overcome in Symbolic Execution regards the fact that to test every possible path of program input for a program is of an ever-increasing exponential complexity,</strong> and hence becomes very time consuming. It becomes infeasible therefore to test immensely long programs, over and over whenever the slightest alteration is made to the code base.
+          It would be advantageous to have an efficient solution to this complexity problem – hence Resumable Symbolic Execution.</p>
+        <p>Whilst not decreasing the overall complexity, Resumable Symbolic Execution allows the previously generated code paths to be saved, so that whenever a change is committed to the code, the entire tree does not have to be generated from scratch, rather, it can be extended from the prior generated tree, dramatically decreasing execution time in the long run.
+          This allows for much easier scaling for larger programs, especially if they have been built from scratch with the testing added progressively.</p>
+        <p>The present implementation of this is as an add-on to the KLEE symbolic virtual machine, creating Resumable Paths from the intermediate representation (LLVM) of languages like C++.</p>
       </div>
     </section>
 
     <section id="pseudo">
       <div class="container-fluid">
-      </br>
-    </br>
+        <br><br>
         <h1>Pseudocode</h1>
-        <div class="spacer"></div>
-      </br>
-          <div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>
-          <span class="lineno"> 1 </span>  <span class="type">int</span> <span class="name">get_sign</span><span class="syntax">(</span><span class="type">int</span><span class="variable"> x</span><span class="syntax">) {</span>
-          <span class="lineno"> 2 </span>	  <span class="flow">if</span> <span class="syntax">(</span><span class="variable">x</span> <span class="equals">==</span> <span class="constant">0</span><span class="syntax">)</span>
-          <span class="lineno"> 3 </span> 		 <span class="flow">return</span> <span class="constant">0</span><span class="syntax">;</span>
-          <span class="lineno"> 4 </span>
-          <span class="lineno"> 5 </span>	  <span class="flow">if</span> <span class="syntax">(</span><span class="variable">x</span> <span class="equals"><</span> <span class="constant">0</span><span class="syntax">)</span>
-          <span class="lineno"> 6 </span> 		 <span class="flow">return</span> <span class="constant">-1</span><span class="syntax">;</span>
-          <span class="lineno"> 7 </span>
-          <span class="lineno"> 8 </span>	  <span class="flow">else</span>
-          <span class="lineno"> 9 </span> 		 <span class="flow">return</span> <span class="constant">1</span><span class="syntax">;</span>
-          <span class="lineno">10 </span>
-          <span class="lineno">11 </span>  <span class="type">int</span> <span class="name">main</span><span class="syntax">() {</span>
-          <span class="lineno">12 </span> 		 <span class="type">int</span> <span class="variable">a</span><span class="syntax">;</span>
-          <span class="lineno">13 </span>      <span class="name">klee_make_symbolic</span><span class="syntax">(&</span><span class="variable">a</span><span class="syntax">, sizeof(</span><span class="variable">a</span><span class="syntax">),</span> <span class="str">"a"</span><span class="syntax">);</span>
-          <span class="lineno">14 </span>      <span class="flow">return</span> <span class="constant">0</span><span class="syntax">;</span>
-</pre></div>
-
-
+        <div class="spacer-black"></div>
+        <br>
+        <div class="mw-highlight mw-content-ltr" dir="ltr">
+          <pre>
+            <span>
+            <span class="lineno"> 1 </span>  <span class="type">int</span> <span class="name">get_sign</span><span class="syntax">(</span><span class="type">int</span><span class="variable"> x</span><span class="syntax">) {</span>
+            <span class="lineno"> 2 </span>	  <span class="flow">if</span> <span class="syntax">(</span><span class="variable">x</span> <span class="equals">==</span> <span class="constant">0</span><span class="syntax">)</span>
+            <span class="lineno"> 3 </span> 		 <span class="flow">return</span> <span class="constant">0</span><span class="syntax">;</span>
+            <span class="lineno"> 4 </span>
+            <span class="lineno"> 5 </span>	  <span class="flow">if</span> <span class="syntax">(</span><span class="variable">x</span> <span class="equals"><</span> <span class="constant">0</span><span class="syntax">)</span>
+            <span class="lineno"> 6 </span> 		 <span class="flow">return</span> <span class="constant">-1</span><span class="syntax">;</span>
+            <span class="lineno"> 7 </span>
+            <span class="lineno"> 8 </span>	  <span class="flow">else</span>
+            <span class="lineno"> 9 </span> 		 <span class="flow">return</span> <span class="constant">1</span><span class="syntax">;</span>
+            <span class="lineno">10 </span>
+            <span class="lineno">11 </span>  <span class="type">int</span> <span class="name">main</span><span class="syntax">() {</span>
+            <span class="lineno">12 </span> 		 <span class="type">int</span> <span class="variable">a</span><span class="syntax">;</span>
+            <span class="lineno">13 </span>      <span class="name">klee_make_symbolic</span><span class="syntax">(&</span><span class="variable">a</span><span class="syntax">, sizeof(</span><span class="variable">a</span><span class="syntax">),</span> <span class="str">"a"</span><span class="syntax">);</span>
+            <span class="lineno">14 </span>      <span class="flow">return</span> <span class="constant">0</span><span class="syntax">;</span>
+          </pre>
+        </div>
+      </div>
     </section>
 
     <section id="links">
       <div class="container-fluid">
-      </br>
-    </br>
+        <br><br>
         <h1>Links</h1>
-        <div class="spacer"></div>
+        <div class="spacer-white"></div>
         <p><b><a href="https://www.doc.ic.ac.uk/~cristic/papers/klee-osdi-08.pdf" target="_blank">Klee Paper</a></b></p>
-        <p><b><a href="http://delivery.acm.org/10.1145/810000/808445/p234-boyer.pdf?ip=146.169.175.6&id=808445&acc=ACTIVE%20SERVICE&key=BF07A2EE685417C5%2EF5014A9D3D5CC2D9%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1549728133_00810472296bf5a52cfc95a9b20081ed" target="_blank">SELECT Paper</a></b></p>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="container">
@@ -173,16 +155,10 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js" rel="stylesheet">
-    <script src="./js/navbar.js"></script>
-
-
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://www.mattboldt.com/demos/typed-js/js/typed.custom.js'></script>
-      <script  src="js/terminal.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script  src="js/terminal.js"></script>
+    <script src="./js/navbar.js"></script>
 
   </body>
 </html>
