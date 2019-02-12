@@ -48,6 +48,6 @@ $(document).scroll(function() {
   } else if ($(this).scrollTop() >= $("#about").offset().top - 120) {
     $('nav').css({"background-color": "#222"});
   } else {
-    $('nav').css({"background-color": "#f8f9fa"});
+    $('nav').css({"background-color": "#5d646d"});
   }
 });
