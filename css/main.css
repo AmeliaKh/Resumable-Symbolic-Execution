@@ -24,7 +24,9 @@ body > nav {
 }
 
 
-
+#topid > a{
+  color:white;
+}
 
 #lks {
   color: #f8f9fa;
