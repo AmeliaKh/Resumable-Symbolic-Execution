@@ -11,30 +11,20 @@
   </head>
 
   <body>
-<<<<<<< HEAD
     <!-- navbar -->
     <nav class="navbar navbar-inverse navbar-toggleable-md navbar-bg-inverse fixed-top" style="background-color: #5d646d; box-shadow: none;">
-=======
-    <nav class="navbar navbar-inverse navbar-toggleable-md navbar-bg-inverse fixed-top">
->>>>>>> 7d2d63861d2479423772d9ede28148c11ebe676c
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="navbar-brand" href="#">frank<strong>busse</strong>
         <br>
-        <div class ="container-fluid text-left">
-<<<<<<< HEAD
-
-
-          <a href="https://twitter.com/f_busse" target="_blank"><i class="fab fa-twitter fa-xs" style = "color:#12a6ec;"></i></a>
-          <a href="https://github.com/251" target="_blank"><i class="fab fa-github fa-xs" style="color:#000;"></i></a>
-          <a href="mailto:f.busse17@imperial.ac.uk" target="_blank"><i class="fas fa-at fa-xs" style="color:#E75448;"></i></a>
-=======
-          <a href="https://twitter.com/f_busse" target="_blank"><i class="fab fa-twitter fa-xs"></i></a>
-          <a href="https://github.com/251" target="_blank"><i class="fab fa-github fa-xs"></i></a>
-          <a href="mailto:f.busse17@imperial.ac.uk" target="_blank"><i class="fas fa-at fa-xs"></i></a>
-          <a href="http://klee.github.io" target="_blank"><img class="klee-icon" src="./assets/kleeIcon192x192.png" style="width:26px;height:26px;"></a>
->>>>>>> 7d2d63861d2479423772d9ede28148c11ebe676c
+        <div class="container-fluid text-left">
+          <div id="topid" class="topIcons">
+            <a href="https://twitter.com/f_busse" target="_blank"><i class="fab fa-twitter fa-xs"></i></a>
+            <a href="https://github.com/251" target="_blank"><i class="fab fa-github fa-xs"></i></a>
+            <a href="mailto:f.busse17@imperial.ac.uk" target="_blank"><i class="fas fa-at fa-xs"></i></a>
+            <a href="http://klee.github.io" target="_blank"><img class="klee-icon" src="./assets/kleeIcon192x192.png" style="width:26px;height:26px;"></a>
+          </div>
         </div>
       </div>
 
@@ -73,19 +63,10 @@
 
     <section id="about">
       <div class="container-fluid">
-<<<<<<< HEAD
-
-        <div style="width: 100px;">
-          <h1>About</h1>
-          <div class="spacer"></div>
-        </div>
-
-=======
         <br><br>
         <h1>About</h1>
         <div class="spacer-white"></div>
         <br>
->>>>>>> 7d2d63861d2479423772d9ede28148c11ebe676c
         <div class="row">
           <div class="col-md-8">
             <div style="color:#FFFFFF;">
@@ -108,15 +89,20 @@
         <h1>Symbolic Execution</h1>
         <div class="spacer-black"></div>
         <br>
-        <p><strong>Symbolic execution is a method of auto-testing a program by passing in variable inputs to a function.</strong> Then, using abstract interpretation of the program, when a conditional is reached, it will branch, limiting the scope of the variable input to that which either causes a true or false outcome from the if statement, depending on the requirements of that branch.
-          The current best implementation of this system is the KLEE program, which has been used to test Unix library files and has achieved high levels of coverage and was able to find several bugs within the code and then provided test cases based on the scope of the various inputs at that particular branch.
-          Symbolic execution itself has been around since the 1970s, when it was first propounded in the paper on the SELECT system by Boyer, Elspas and Levitt.</p>
-        <p>In the beginning however, it faced several major difficulties.
-          The main difficulty impeding further development was that symbolic execution is very resource intensive and computers at the time were just not powerful enough to run the process.
-          The other major issue was underdeveloped searching heuristics and optimisations in pruning branches of the program dynamically.
-          By 2008 however, when the KLEE paper was published, computing power had greatly increased and many more optimisations were available to them than were around in the 1970s. This allowed for vastly improved program coverage, reaching up to 99% of some files when tested and being capable of handling code in the thousands of lines, instead of the simple programs previously testable.
-        </p>
+        <div class="row">
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-8">
+            <p><strong>Symbolic execution is a method of auto-testing a program by passing in variable inputs to a function.</strong> It will then use an interpreter to run through the function or program. When a conditional statement is reached, it will branch, limiting the scope of the variable input to that which either causes a true or false outcome for the conditional statement, depending on the requirements of that branch.</p>
+    <br>
+            <p>The current best implementation of this system is the KLEE program, which has been used to test Unix library files and has achieved high levels of program coverage. It was able to find several bugs within the files and then provided test cases based on the scope of the various inputs at that particular branch.</p>
+    <br>
+            <p>Symbolic execution itself has been around since the 1970s, when it was first propounded in the paper on the SELECT system by Boyer, Elspas and Levitt. In the beginning however, it faced several major difficulties. The main difficulty impeding further development was that symbolic execution is very resource intensive and computers at the time were just not powerful enough to run the process.</p>
+    <br>
+            <p>The other major issue was the lack of optimisations, especially in pruning branches of the program dynamically. By 2008 however, when the KLEE paper was published, computing power had greatly increased and many more optimisations were available to them than were around in the 1970s. This allowed for vastly improved program coverage, reaching up to 99% of some files when tested and being capable of handling code in the thousands of lines, instead of the simple programs previously testable.</p>
+          </div>
       </div>
+    </div>
     </section>
 
     <section id="resumable">
@@ -166,16 +152,14 @@
         <br><br>
         <h1>Links</h1>
         <div class="spacer-white"></div>
-        <p><b><a href="https://www.doc.ic.ac.uk/~cristic/papers/klee-osdi-08.pdf" target="_blank">Klee Paper</a></b></p>
-<<<<<<< HEAD
-        <p><b><a href="http://delivery.acm.org/10.1145/810000/808445/p234-boyer.pdf?ip=146.169.175.6&id=808445&acc=ACTIVE%20SERVICE&key=BF07A2EE685417C5%2EF5014A9D3D5CC2D9%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1549728133_00810472296bf5a52cfc95a9b20081ed" target="_blank">SELECT Paper</a></b></p>
-
+        <div id="lks">
+          <p><b><a href="https://www.doc.ic.ac.uk/~cristic/papers/klee-osdi-08.pdf" target="_blank">Klee Paper</a></b></p>
+          <p><b><a href="http://delivery.acm.org/10.1145/810000/808445/p234-boyer.pdf?ip=146.169.175.6&id=808445&acc=ACTIVE%20SERVICE&key=BF07A2EE685417C5%2EF5014A9D3D5CC2D9%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1549728133_00810472296bf5a52cfc95a9b20081ed" target="_blank">SELECT Paper</a></b></p>
+        </div>
     </section>
     <section id="contact">
       <div class="container-fluid">
         <a class="twitter-timeline" data-height="700" data-theme="light" href="https://twitter.com/f_busse?ref_src=twsrc%5Etfw">Tweets by f_busse</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-=======
->>>>>>> 7d2d63861d2479423772d9ede28148c11ebe676c
       </div>
     </section>
 

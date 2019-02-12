@@ -31,9 +31,10 @@ body > nav {
   transition-duration: 0.4s;
 }
 
-/* #description {
-  margin-top: 0px;
-} */
+#lks {
+  color: #ff0000;
+}
+
 
 /* #social-media {
   margin: 60px 60px 0 60px;
@@ -82,16 +83,6 @@ body > nav {
   border-radius: 50%;
 }
 
-<<<<<<< HEAD
-#contact {
-  padding: 8% 8% 0 8%;
-  background-color: #eef4fc;
-  height: 100vh;
-  color: #222;
-}
-
-=======
->>>>>>> 7d2d63861d2479423772d9ede28148c11ebe676c
 #symbolic-execution {
   padding: 8% 8% 8% 8%;
   background-color: #f8f9fa;
@@ -173,7 +164,13 @@ body > nav {
   color: #222;
 }
 
-/* #pseudo > .container-fluid > .col-md-12 > a {
+#contact {
+  background-color: #f8f9fa;
+}
+
+/* #pseudo > .cont
+
+ainer-fluid > .col-md-12 > a {
   transition-duration: 0s;
 } */
 
@@ -292,6 +289,8 @@ body > nav {
   bottom: 0;
   overflow: auto;
 }
+
+
 
 #header > .container-fluid > .terminal-window section.terminal .typed-cursor {
     opacity: 1;
