@@ -1,53 +1,55 @@
 $(document).scroll(function() {
-  if ($(this).scrollTop() >= $("#contact").offset().top - 120) {
-    $('#navbarCollapse > ul > li.nav-item > a').css({"color": "#222"});
-  } else if ($(this).scrollTop() >= $("#links").offset().top - 120) {
-    $('#navbarCollapse > ul > li.nav-item > a').css({"color": "#f8f9fa"});
-  } else if ($(this).scrollTop() >= $("#pseudo").offset().top - 120) {
-    $('#navbarCollapse > ul > li.nav-item > a').css({"color": "#222"});
-  } else if ($(this).scrollTop() >= $("#history").offset().top - 120) {
-    $('#navbarCollapse > ul > li.nav-item > a').css({"color": "#f8f9fa"});
-  } else if ($(this).scrollTop() >= $("#symbolic-execution").offset().top - 120) {
-    $('#navbarCollapse > ul > li.nav-item > a').css({"color": "#222"});
-  } else if ($(this).scrollTop() >= $("#about").offset().top - 120) {
-    $('#navbarCollapse > ul > li.nav-item > a').css({"color": "#f8f9fa"});
+  if ($('button').attr("aria-expanded") == "true") {
+    var overlap = 335;
   } else {
-    $('#navbarCollapse > ul > li.nav-item > a').css({"color": "#222"});
+    var overlap = 120;
   }
-});
 
-$(document).scroll(function() {
-  if ($(this).scrollTop() >= $("#contact").offset().top - 120) {
+  if ($(this).scrollTop() >= $("#links").offset().top - overlap) {
+    $('#navbarCollapse > ul > li.nav-item > a').css({"color": "#222"});
     $('.navbar-brand').css({"color": "#222"});
-  } else if ($(this).scrollTop() >= $("#links").offset().top - 120) {
-    $('.navbar-brand').css({"color": "#f8f9fa"});
-  } else if ($(this).scrollTop() >= $("#pseudo").offset().top - 120) {
-    $('.navbar-brand').css({"color": "#222"});
-  } else if ($(this).scrollTop() >= $("#history").offset().top - 120) {
-    $('.navbar-brand').css({"color": "#f8f9fa"});
-  } else if ($(this).scrollTop() >= $("#symbolic-execution").offset().top - 120) {
-    $('.navbar-brand').css({"color": "#222"});
-  } else if ($(this).scrollTop() >= $("#about").offset().top - 120) {
-    $('.navbar-brand').css({"color": "#f8f9fa"});
-  } else {
-    $('.navbar-brand').css({"color": "#222"});
-  }
-});
+    $('nav').css({"background-color": "#f8f9fa"});
+    $('a').css({"color": "#222"});
+    $('.klee-icon').attr("src","./assets/kleeIcon192x192.png");
 
-$(document).scroll(function() {
-  if ($(this).scrollTop() >= $("#contact").offset().top - 120) {
-    $('nav').css({"background-color": "#f8f9fa"});
-  } else if ($(this).scrollTop() >= $("#links").offset().top - 120) {
+  } else if ($(this).scrollTop() >= $("#pseudo").offset().top - overlap) {
+    $('#navbarCollapse > ul > li.nav-item > a').css({"color": "#f8f9fa"});
+    $('.navbar-brand').css({"color": "#f8f9fa"});
     $('nav').css({"background-color": "#222"});
-  } else if ($(this).scrollTop() >= $("#pseudo").offset().top - 120) {
+    $('a').css({"color": "#f8f9fa"});
+    $('.klee-icon').attr("src","./assets/kleeIconWhite192x192.png");
+
+  } else if ($(this).scrollTop() >= $("#resumable").offset().top - overlap) {
+    $('#navbarCollapse > ul > li.nav-item > a').css({"color": "#222"});
+    $('.navbar-brand').css({"color": "#222"});
     $('nav').css({"background-color": "#f8f9fa"});
-  } else if ($(this).scrollTop() >= $("#history").offset().top - 120) {
+    $('a').css({"color": "#222"});
+    $('.klee-icon').attr("src","./assets/kleeIcon192x192.png");
+
+  } else if ($(this).scrollTop() >= $("#symbolic-execution").offset().top - overlap) {
+    $('#navbarCollapse > ul > li.nav-item > a').css({"color": "#f8f9fa"});
+    $('.navbar-brand').css({"color": "#f8f9fa"});
     $('nav').css({"background-color": "#222"});
-  } else if ($(this).scrollTop() >= $("#symbolic-execution").offset().top - 120) {
+    $('a').css({"color": "#f8f9fa"});
+    $('.klee-icon').attr("src","./assets/kleeIconWhite192x192.png");
+
+  } else if ($(this).scrollTop() >= $("#about").offset().top - overlap) {
+    $('#navbarCollapse > ul > li.nav-item > a').css({"color": "#222"});
+    $('.navbar-brand').css({"color": "#222"});
     $('nav').css({"background-color": "#f8f9fa"});
-  } else if ($(this).scrollTop() >= $("#about").offset().top - 120) {
-    $('nav').css({"background-color": "#222"});
+    $('a').css({"color": "#222"});
+    $('.klee-icon').attr("src","./assets/kleeIcon192x192.png");
+
   } else {
+<<<<<<< HEAD
     $('nav').css({"background-color": "#5d646d"});
+=======
+    $('#navbarCollapse > ul > li.nav-item > a').css({"color": "#222"});
+    $('.navbar-brand').css({"color": "#222"});
+    $('nav').css({"background-color": "#f8f9fa"});
+    $('a').css({"color": "#222"});
+    $('.klee-icon').attr("src","./assets/kleeIcon192x192.png");
+
+>>>>>>> 7d2d63861d2479423772d9ede28148c11ebe676c
   }
 });
