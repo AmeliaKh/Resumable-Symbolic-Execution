@@ -133,10 +133,10 @@
           <h1>Frank&#39s Work</h1>
           <div class="spacer-white"></div>
           <br>
-              <p><strong>The main obstacle to overcome in Symbolic Execution regards the fact that to test every possible path of program input for a program is of an ever-increasing exponential complexity,</strong> and hence becomes very time consuming. It becomes infeasible therefore to test immensely long programs, over and over whenever the slightest alteration is made to the code base.
+              <p><strong>The main obstacle to overcome in Symbolic Execution regards the fact that to test every possible path of program input for a program is of an exponential complexity,</strong> and hence becomes very time consuming. It becomes infeasible therefore to test immensely long programs, over and over whenever the slightest alteration is made to the code base.
                 It would be advantageous to have an efficient solution to this complexity problem – hence Resumable Symbolic Execution.</p>
   <br>
-              <p>Whilst not decreasing the overall complexity, Resumable Symbolic Execution allows the previously generated code paths to be saved, so that whenever a change is committed to the code, the entire tree does not have to be generated from scratch, rather, it can be extended from the prior generated tree, dramatically decreasing execution time in the long run.
+              <p>Whilst not decreasing the overall complexity, Resumable Symbolic Execution allows the previously generated code paths to be saved, so that whenever a change is committed to the code, the entire tree does not have to be generated from scratch, rather, it can be extended from the prior generated tree, dramatically decreasing execution time.
                 This allows for much easier scaling for larger programs, especially if they have been built from scratch with the testing added progressively.</p>
   <br>
               <p>The present implementation of this is as an add-on to the KLEE symbolic virtual machine, creating Resumable Paths from the intermediate representation (LLVM) of languages like C++.</p>
@@ -199,8 +199,11 @@
         <div id="lks">
           <p>
             <strong>The 2008 academic paper in which the KLEE symbolic virtual machine was first introduced,</strong> by Cristian Cadar, Daniel Dunbar, and Dawson Engler, at Stanford University. Frank's Resumable Symbolic Execution is built on top of the KLEE implementation.
-            <b><a href="https://www.doc.ic.ac.uk/~cristic/papers/klee-osdi-08.pdf" target="_blank">Klee Paper</a></b></p>
-            <br>
+            <b>
+            	<a href="https://www.doc.ic.ac.uk/~cristic/papers/klee-osdi-08.pdf" target="_blank">Klee Paper</a>
+            </b>
+          </p>
+          <br>
           <p>
             <strong>The SELECT paper from 1975 Proceedings of the International Conference on Reliable software,</strong> by Robert Boyer, Bernard Elspas, and Karl Levitt.
             This was the paper that introduced the idea of Symbolic Execution, however not much work could be done at the time due to the limited processing ability of the systems at the time.
@@ -215,15 +218,22 @@
           </p>
           <p>
             <strong>The link to Frank&#39s SRG page.</strong> The Software Realiability Group is dedicated to developing tools and algorithms for improving the reliability and security of software applications
-            <b><a href="https://srg.doc.ic.ac.uk/people/frank-busse/" target="_blank">Frank Busse SRG</a></b>
+            <b>
+            	<a href="https://srg.doc.ic.ac.uk/people/frank-busse/" target="_blank">Frank Busse SRG</a>
+            </b>
+          </p>
+          <p>
+          	<strong>An implementation of KLEE for the browser,</strong> from which the example code above is taken.
+          	<b>
+          		<a href="http://klee.doc.ic.ac.uk" target="_blank">KLEE Web</a>
+          	</b>
           </p>
         </div>
     </section>
     <section id="contact">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-2">
-          </div>
+          <div class="col-md-2"></div>
           <div class="col-md-8">
             <br>
             <br>
@@ -233,9 +243,8 @@
             <br>
             <a class="twitter-timeline" data-height="1000" data-theme="light" href="https://twitter.com/f_busse?ref_src=twsrc%5Etfw">Tweets by f_busse</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
-          <div class="col-md-2">
-          </div>
-          </div>
+          <div class="col-md-2"></div>
+        </div>
       </div>
     </section>
 
@@ -256,10 +265,8 @@
 
     <script src="./js/jquery.js"></script>
     <script src="./js/terminalAnimation.js"></script>
-
     <script src="./js/bootstrap.js"></script>
     <script src="./js/terminal.js"></script>
     <script src="./js/navbar.js"></script>
-
   </body>
 </html>
