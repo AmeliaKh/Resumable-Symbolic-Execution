@@ -19,7 +19,7 @@
       <div class="navbar-brand" href="#">frank<strong>busse</strong>
         <br>
         <div class="container-fluid text-left">
-          <div id="topid" class="topIcons">
+          <div id="topid">
             <a href="https://twitter.com/f_busse" target="_blank"><i class="fab fa-twitter fa-xs"></i></a>
             <a href="https://github.com/251" target="_blank"><i class="fab fa-github fa-xs"></i></a>
             <a href="mailto:f.busse17@imperial.ac.uk" target="_blank"><i class="fas fa-at fa-xs"></i></a>
@@ -31,19 +31,19 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about">About Frank </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#symbolic-execution">Symbolic Execution</a>
+            <a class="nav-link" href="#symbolic-execution">Symbolic Execution </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#resumable">Frank's Work</a>
+            <a class="nav-link" href="#resumable">Frank's Work </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#pseudo">Example</a>
+            <a class="nav-link" href="#pseudo">Example </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#links">Links</a>
+            <a class="nav-link" href="#links">Links </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Twitter</a>
@@ -57,7 +57,7 @@
         <div class="terminal-window">
           <section class="terminal">
             <div class="historyterm"></div>
-            $&nbsp;<span class="prompt"></span>
+            >&nbsp;<span class="prompt"></span>
             <span class="typed-cursor"></span>
           </section>
         </div>
@@ -67,42 +67,55 @@
     <section id="about">
       <div class="container-fluid">
         <br><br>
-        <h1>About</h1>
-        <div class="spacer-white"></div>
-        <br>
         <div class="row">
-          <div class="col-md-8">
-            <div style="color:#FFFFFF;">
-              <p><strong>Frank is a doctoral student in the Department of Computing at Imperial College London, </strong>and holds a Diploma in Computer Science from the Technische Universität Dresden. He found particular interest in Symbolic Execution, software analysis and testing, so decided to continue expanding his knowledge of it later on in his life.
-                Previously, Frank had worked as a Research Assistant for the System Engineering Group at his university. He had taught for several years as well, but decided to do more research instead.</p>
-              <p>Frank finds enjoyment in his PhD research, since it allows him to explore new ideas without the pressure of industry, which he otherwise finds rather stressful. He works in the Software Reliability Group under the supervision of Dr Cristian Cadar, who is responsible for developing the KLEE system, which forms the basis of Frank’s PhD research.</p>
-              <br>
+          <div class="col-md-1">
+            <h1 align="right">&gt;_</h1>
+          </div>
+          <div class="col-md-11">
+            <h1>About Frank</h1>
+            <div class="spacer-white"></div>
+            <br>
+            <div class="row">
+              <div class="col-md-8">
+                <div style="color:#FFFFFF;">
+                  <p><strong>Frank is a doctoral student in the Department of Computing at Imperial College London, </strong>and holds a Diploma in Computer Science from the Technische Universität Dresden. He found particular interest in Symbolic Execution, software analysis and testing, so decided to continue expanding his knowledge of it later on in his life.
+                    Previously, Frank had worked as a Research Assistant for the System Engineering Group at his university. He had taught for several years as well, but decided to do more research instead.</p>
+                    <br>
+                  <p>Frank finds enjoyment in his PhD research, since it allows him to explore new ideas without the pressure of industry, which he otherwise finds rather stressful. He works in the Software Reliability Group under the supervision of Dr Cristian Cadar, who is responsible for developing the KLEE system, which forms the basis of Frank’s PhD research.</p>
+                  <br>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex h-150 justify-content-center align-items-center">
+                <img src="assets/circlepic.png" class="img-fluid">
+              </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex h-150 justify-content-center align-items-center">
-            <img src="assets/circlepic.png" class="img-fluid">
-          </div>
-        </div>
       </div>
     </section>
 
     <section id="symbolic-execution">
       <div class="container-fluid">
-        <br><br>
-        <h1>Symbolic Execution</h1>
-        <div class="spacer-black"></div>
-        <br>
+      <br><br>
         <div class="row">
-          <div class="col-md-10">
-            <p><strong>Symbolic execution is a method of auto-testing a program by passing in variable inputs to a function.</strong> It will then use an interpreter to run through the function or program. When a conditional statement is reached, it will branch, limiting the scope of the variable input to that which either causes a true or false outcome for the conditional statement, depending on the requirements of that branch.</p>
-    <br>
-            <p>The current best implementation of this system is the KLEE program, which has been used to test Unix library files and has achieved high levels of program coverage. It was able to find several bugs within the files and then provided test cases based on the scope of the various inputs at that particular branch.</p>
-    <br>
-            <p>Symbolic execution itself has been around since the 1970s, when it was first propounded in the paper on the SELECT system by Boyer, Elspas and Levitt. In the beginning however, it faced several major difficulties. The main difficulty impeding further development was that symbolic execution is very resource intensive and computers at the time were just not powerful enough to run the process.</p>
-    <br>
-            <p>The other major issue was the lack of optimisations, especially in pruning branches of the program dynamically. By 2008 however, when the KLEE paper was published, computing power had greatly increased and many more optimisations were available to them than were around in the 1970s. This allowed for vastly improved program coverage, reaching up to 99% of some files when tested and being capable of handling code in the thousands of lines, instead of the simple programs previously testable.</p>
+          <div class="col-md-1">
+            <h1 align="right">&gt;_</h1>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-11">
+            <h1>Symbolic Execution</h1>
+            <div class="spacer-black"></div>
+            <br>
+            <div class="row">
+              <div class="col-md-10">
+                <p><strong>Symbolic execution is a method of auto-testing a program by passing in variable inputs to a function.</strong> It will then use an interpreter to run through the function or program. When a conditional statement is reached, it will branch, limiting the scope of the variable input to that which either causes a true or false outcome for the conditional statement, depending on the requirements of that branch.</p>
+        <br>
+                <p>The current best implementation of this system is the KLEE program, which has been used to test Unix library files and has achieved high levels of program coverage. It was able to find several bugs within the files and then provided test cases based on the scope of the various inputs at that particular branch.</p>
+        <br>
+                <p>Symbolic execution itself has been around since the 1970s, when it was first propounded in the paper on the SELECT system by Boyer, Elspas and Levitt. In the beginning however, it faced several major difficulties. The main difficulty impeding further development was that symbolic execution is very resource intensive and computers at the time were just not powerful enough to run the process.</p>
+        <br>
+                <p>The other major issue was the lack of optimisations, especially in pruning branches of the program dynamically. By 2008 however, when the KLEE paper was published, computing power had greatly increased and many more optimisations were available to them than were around in the 1970s. This allowed for vastly improved program coverage, reaching up to 99% of some files when tested and being capable of handling code in the thousands of lines, instead of the simple programs previously testable.</p>
+              </div>
+              <div class="col-md-2">
+              </div>
           </div>
       </div>
     </div>
@@ -111,27 +124,33 @@
     <section id="resumable">
       <div class="container-fluid">
         <br><br>
-        <h1>Frank's Work</h1>
-        <div class="spacer-white"></div>
-        <br>
         <div class="row">
-          <div class="col-md-10">
-            <p><strong>The main obstacle to overcome in Symbolic Execution regards the fact that to test every possible path of program input for a program is of an ever-increasing exponential complexity,</strong> and hence becomes very time consuming. It becomes infeasible therefore to test immensely long programs, over and over whenever the slightest alteration is made to the code base.
-              It would be advantageous to have an efficient solution to this complexity problem – hence Resumable Symbolic Execution.</p>
-<br>
-            <p>Whilst not decreasing the overall complexity, Resumable Symbolic Execution allows the previously generated code paths to be saved, so that whenever a change is committed to the code, the entire tree does not have to be generated from scratch, rather, it can be extended from the prior generated tree, dramatically decreasing execution time in the long run.
-              This allows for much easier scaling for larger programs, especially if they have been built from scratch with the testing added progressively.</p>
-<br>
-            <p>The present implementation of this is as an add-on to the KLEE symbolic virtual machine, creating Resumable Paths from the intermediate representation (LLVM) of languages like C++.</p>
+          <div class="col-md-1">
+            <h1 align="right">&gt;_</h1>
           </div>
-          <div class="col-md-2">
-          </div>
+          <div class="col-md-11">
+          <h1>Frank&#39s Work</h1>
+          <div class="spacer-white"></div>
+          <br>
+              <p><strong>The main obstacle to overcome in Symbolic Execution regards the fact that to test every possible path of program input for a program is of an ever-increasing exponential complexity,</strong> and hence becomes very time consuming. It becomes infeasible therefore to test immensely long programs, over and over whenever the slightest alteration is made to the code base.
+                It would be advantageous to have an efficient solution to this complexity problem – hence Resumable Symbolic Execution.</p>
+  <br>
+              <p>Whilst not decreasing the overall complexity, Resumable Symbolic Execution allows the previously generated code paths to be saved, so that whenever a change is committed to the code, the entire tree does not have to be generated from scratch, rather, it can be extended from the prior generated tree, dramatically decreasing execution time in the long run.
+                This allows for much easier scaling for larger programs, especially if they have been built from scratch with the testing added progressively.</p>
+  <br>
+              <p>The present implementation of this is as an add-on to the KLEE symbolic virtual machine, creating Resumable Paths from the intermediate representation (LLVM) of languages like C++.</p>
+            </div>
       </div>
     </section>
 
     <section id="pseudo">
       <div class="container-fluid">
         <br><br>
+        <div class="row">
+          <div class="col-md-1">
+            <h1 align="right">&gt;_</h1>
+          </div>
+          <div class="col-md-11">
         <h1>Example of KLEE</h1>
         <div class="spacer-black"></div>
         <br>
@@ -161,27 +180,41 @@
                   <img src="assets/treeDiagram.png" alt="Symbolic execution tree" width=100%>
                 </div>
             </div>
+          </div>
       </div>
     </section>
 
     <section id="links">
       <div class="container-fluid">
         <br><br>
+        <div class="row">
+          <div class="col-md-1">
+            <h1 align="right">&gt;_</h1>
+          </div>
+          <div class="col-md-11">
         <h1>Links</h1>
         <div class="spacer-white"></div>
+        <br>
         <div id="lks">
           <p>
             <strong>The 2008 academic paper in which the KLEE symbolic virtual machine was first introduced,</strong> by Cristian Cadar, Daniel Dunbar, and Dawson Engler, at Stanford University. Frank's Resumable Symbolic Execution is built on top of the KLEE implementation.
             <b><a href="https://www.doc.ic.ac.uk/~cristic/papers/klee-osdi-08.pdf" target="_blank">Klee Paper</a></b></p>
+            <br>
           <p>
-            <strong>The SELECT paper from 1975 Proceedings of the International Conference on Reliable software,</strong> by Robert Boyer, Bernard Elspas, and Karl Levitt. 
+            <strong>The SELECT paper from 1975 Proceedings of the International Conference on Reliable software,</strong> by Robert Boyer, Bernard Elspas, and Karl Levitt.
             This was the paper that introduced the idea of Symbolic Execution, however not much work could be done at the time due to the limited processing ability of the systems at the time.
             Many of the techniques employed now are originally outlined in this paper.
             <b><a href="https://dl.acm.org/citation.cfm?id=808445" target="_blank">SELECT Paper</a></b></p>
+            <br>
           <p>
             <strong>The 2018 academic paper in which a variant of Symbolic Execution is implemented,</strong> called Chopped Symbolic Execution, by David Trabish, Andrea Mattavelli, Noam Rinetzsky, and Cristian Cadar.
             This was a prototype implementation of a debugging program which is allowed to skip certain execution paths (by executing them lazily) and only focusing on paths that needed to be looked at.
             <b><a href="https://srg.doc.ic.ac.uk/files/papers/chopper-icse-18.pdf" target="_blank">Chopped Symbolic Execution</a></b>
+            <br>
+          </p>
+          <p>
+            <strong>The link to Frank&#39s SRG page.</strong> The Software Realiability Group is dedicated to developing tools and algorithms for improving the reliability and security of software applications
+            <b><a href="https://srg.doc.ic.ac.uk/people/frank-busse/" target="_blank">Frank Busse SRG</a></b>
           </p>
         </div>
     </section>
@@ -201,7 +234,10 @@
           </div>
           <div class="col-md-2">
           </div>
+          </div>
       </div>
+      <button id="close-image"><img src="http://thinkingstiff.com/images/matt.jpg"></button>
+      <button id="close-CSS"></button>
     </section>
 
     <footer class="footer">

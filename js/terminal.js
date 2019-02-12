@@ -28,7 +28,7 @@ function runScripts(data, pos) {
             callback: function() {
               var historyterm = $('.historyterm').html();
               historyterm = historyterm ? [historyterm] : [];
-              historyterm.push('$ ' + prompt.text());
+              historyterm.push('> ' + prompt.text());
               if(script.output) {
                 historyterm.push(script.output);
                 prompt.html('');
