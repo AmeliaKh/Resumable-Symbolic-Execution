@@ -125,7 +125,7 @@
         <h1>Pseudocode</h1>
         <div class="spacer-black"></div>
         <br>
-        <div class="mw-highlight mw-content-ltr" dir="ltr">
+        <div class="code-colour code-window" dir="ltr">
           <pre>
             <span>
             <span class="lineno"> 1 </span>  <span class="type">int</span> <span class="name">get_sign</span><span class="syntax">(</span><span class="type">int</span><span class="variable"> x</span><span class="syntax">) {</span>
@@ -153,8 +153,19 @@
         <h1>Links</h1>
         <div class="spacer-white"></div>
         <div id="lks">
-          <p><b><a href="https://www.doc.ic.ac.uk/~cristic/papers/klee-osdi-08.pdf" target="_blank">Klee Paper</a></b></p>
-          <p><b><a href="http://delivery.acm.org/10.1145/810000/808445/p234-boyer.pdf?ip=146.169.175.6&id=808445&acc=ACTIVE%20SERVICE&key=BF07A2EE685417C5%2EF5014A9D3D5CC2D9%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1549728133_00810472296bf5a52cfc95a9b20081ed" target="_blank">SELECT Paper</a></b></p>
+          <p>
+            <strong>The 2008 academic paper in which the KLEE symbolic virtual machine was first introduced,</strong> by Cristian Cadar, Daniel Dunbar, and Dawson Engler, at Stanford University. Frank's Resumable Symbolic Execution is built on top of the KLEE implementation.
+            <b><a href="https://www.doc.ic.ac.uk/~cristic/papers/klee-osdi-08.pdf" target="_blank">Klee Paper</a></b></p>
+          <p>
+            <strong>The SELECT paper from 1975 Proceedings of the International Conference on Reliable software,</strong> by Robert Boyer, Bernard Elspas, and Karl Levitt. 
+            This was the paper that introduced the idea of Symbolic Execution, however not much work could be done at the time due to the limited processing ability of the systems at the time.
+            Many of the techniques employed now are originally outlined in this paper.
+            <b><a href="https://dl.acm.org/citation.cfm?id=808445" target="_blank">SELECT Paper</a></b></p>
+          <p>
+            <strong>The 2018 academic paper in which a variant of Symbolic Execution is implemented,</strong> called Chopped Symbolic Execution, by David Trabish, Andrea Mattavelli, Noam Rinetzsky, and Cristian Cadar.
+            This was a prototype implementation of a debugging program which is allowed to skip certain execution paths (by executing them lazily) and only focusing on paths that needed to be looked at.
+            <b><a href="https://srg.doc.ic.ac.uk/files/papers/chopper-icse-18.pdf" target="_blank">Chopped Symbolic Execution</a></b>
+          </p>
         </div>
     </section>
     <section id="contact">
@@ -172,7 +183,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src='https://www.mattboldt.com/demos/typed-js/js/typed.custom.js'></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script  src="js/terminal.js"></script>
+    <script src="./js/terminal.js"></script>
     <script src="./js/navbar.js"></script>
 
   </body>
