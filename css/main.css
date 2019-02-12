@@ -23,9 +23,11 @@ body > nav {
   transition-duration: 0.4s;
 }
 
-#lks {
-  color: #f8f9fa;
+
+#topid > a{
+  color:white;
 }
+
 
 #navbarCollapse > ul > li.nav-item > a {
   color: #fff;
@@ -57,7 +59,6 @@ body > nav {
   color: #222;
 }
 
-<<<<<<< HEAD
 #treeD {
   width: 5%;
 }
