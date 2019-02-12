@@ -28,7 +28,7 @@ body > nav {
 }
 
 #navbarCollapse > ul > li.nav-item > a {
-  color: #222;
+  color: #fff;
   font-size: 1.1rem;
   transition-duration: 0.2s;
 }
