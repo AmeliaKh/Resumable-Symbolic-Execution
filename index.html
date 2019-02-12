@@ -90,7 +90,7 @@
         <div class="spacer-black"></div>
         <br>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-2">
           </div>
           <div class="col-md-8">
             <p><strong>Symbolic execution is a method of auto-testing a program by passing in variable inputs to a function.</strong> It will then use an interpreter to run through the function or program. When a conditional statement is reached, it will branch, limiting the scope of the variable input to that which either causes a true or false outcome for the conditional statement, depending on the requirements of that branch.</p>
@@ -100,6 +100,8 @@
             <p>Symbolic execution itself has been around since the 1970s, when it was first propounded in the paper on the SELECT system by Boyer, Elspas and Levitt. In the beginning however, it faced several major difficulties. The main difficulty impeding further development was that symbolic execution is very resource intensive and computers at the time were just not powerful enough to run the process.</p>
     <br>
             <p>The other major issue was the lack of optimisations, especially in pruning branches of the program dynamically. By 2008 however, when the KLEE paper was published, computing power had greatly increased and many more optimisations were available to them than were around in the 1970s. This allowed for vastly improved program coverage, reaching up to 99% of some files when tested and being capable of handling code in the thousands of lines, instead of the simple programs previously testable.</p>
+          </div>
+          <div class="col-md-2">
           </div>
       </div>
     </div>
@@ -125,25 +127,32 @@
         <h1>Pseudocode</h1>
         <div class="spacer-black"></div>
         <br>
+        <p>The following is a function, in C, detailing how to get the sign of a given integer input, along with the symbolic execution tree that represents how the KLEE program would interpret the function. Each if statement is represented by a branch in the tree and with alpha acting as the variable input, the way this is limited is detailed on the side of each branch.</p>
         <div class="code-colour code-window" dir="ltr">
-          <pre>
+            <div class="row">
+              <div class="col-sm-7">
+                  <pre>
             <span>
-            <span class="lineno"> 1 </span>  <span class="type">int</span> <span class="name">get_sign</span><span class="syntax">(</span><span class="type">int</span><span class="variable"> x</span><span class="syntax">) {</span>
-            <span class="lineno"> 2 </span>	  <span class="flow">if</span> <span class="syntax">(</span><span class="variable">x</span> <span class="equals">==</span> <span class="constant">0</span><span class="syntax">)</span>
-            <span class="lineno"> 3 </span> 		 <span class="flow">return</span> <span class="constant">0</span><span class="syntax">;</span>
-            <span class="lineno"> 4 </span>
-            <span class="lineno"> 5 </span>	  <span class="flow">if</span> <span class="syntax">(</span><span class="variable">x</span> <span class="equals"><</span> <span class="constant">0</span><span class="syntax">)</span>
-            <span class="lineno"> 6 </span> 		 <span class="flow">return</span> <span class="constant">-1</span><span class="syntax">;</span>
-            <span class="lineno"> 7 </span>
-            <span class="lineno"> 8 </span>	  <span class="flow">else</span>
-            <span class="lineno"> 9 </span> 		 <span class="flow">return</span> <span class="constant">1</span><span class="syntax">;</span>
-            <span class="lineno">10 </span>
-            <span class="lineno">11 </span>  <span class="type">int</span> <span class="name">main</span><span class="syntax">() {</span>
-            <span class="lineno">12 </span> 		 <span class="type">int</span> <span class="variable">a</span><span class="syntax">;</span>
-            <span class="lineno">13 </span>      <span class="name">klee_make_symbolic</span><span class="syntax">(&</span><span class="variable">a</span><span class="syntax">, sizeof(</span><span class="variable">a</span><span class="syntax">),</span> <span class="str">"a"</span><span class="syntax">);</span>
-            <span class="lineno">14 </span>      <span class="flow">return</span> <span class="constant">0</span><span class="syntax">;</span>
-          </pre>
-        </div>
+      <span class="lineno"> 1 </span><span class="type">int</span> <span class="name">get_sign</span><span class="syntax">(</span><span class="type">int</span><span class="variable"> x</span><span class="syntax">) {</span>
+      <span class="lineno"> 2 </span> <span class="flow">if</span> <span class="syntax">(</span><span class="variable">x</span> <span class="equals">==</span> <span class="constant">0</span><span class="syntax">)</span>
+      <span class="lineno"> 3 </span>		<span class="flow">return</span> <span class="constant">0</span><span class="syntax">;</span>
+      <span class="lineno"> 4 </span>
+      <span class="lineno"> 5 </span> <span class="flow">if</span> <span class="syntax">(</span><span class="variable">x</span> <span class="equals"><</span> <span class="constant">0</span><span class="syntax">)</span>
+      <span class="lineno"> 6 </span>		<span class="flow">return</span> <span class="constant">-1</span><span class="syntax">;</span>
+      <span class="lineno"> 7 </span>
+      <span class="lineno"> 8 </span> <span class="flow">else</span>
+      <span class="lineno"> 9 </span> 	<span class="flow">return</span> <span class="constant">1</span><span class="syntax">;</span>
+      <span class="lineno">10 </span>
+      <span class="lineno">11 </span><span class="type">int</span> <span class="name">main</span><span class="syntax">() {</span>
+      <span class="lineno">12 </span>		<span class="type">int</span> <span class="variable">a</span><span class="syntax">;</span>
+      <span class="lineno">13 </span>    <span class="name">klee_make_symbolic</span><span class="syntax">(&</span><span class="variable">a</span><span class="syntax">, sizeof(</span><span class="variable">a</span><span class="syntax">),</span> <span class="str">"a"</span><span class="syntax">);</span>
+      <span class="lineno">14 </span>    <span class="flow">return</span> <span class="constant">0</span><span class="syntax">;</span>
+                  </pre>
+                </div>
+                <div class="col-sm-5">
+                  <img src="assets/treeDiagram.png" alt="Symbolic execution tree">
+                </div>
+            </div>
       </div>
     </section>
 
@@ -170,7 +179,14 @@
     </section>
     <section id="contact">
       <div class="container-fluid">
-        <a class="twitter-timeline" data-height="700" data-theme="light" href="https://twitter.com/f_busse?ref_src=twsrc%5Etfw">Tweets by f_busse</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="row">
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-8">
+            <a class="twitter-timeline" data-height="700" data-theme="light" href="https://twitter.com/f_busse?ref_src=twsrc%5Etfw">Tweets by f_busse</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+          <div class="col-md-2">
+          </div>
       </div>
     </section>
 
