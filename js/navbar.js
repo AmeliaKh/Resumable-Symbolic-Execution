@@ -5,7 +5,14 @@ $(document).scroll(function() {
     var overlap = 120;
   }
 
-  if ($(this).scrollTop() >= $("#links").offset().top - overlap) {
+  if ($(this).scrollTop() >= $("#contact").offset().top - overlap) {
+    $('#navbarCollapse > ul > li.nav-item > a').css({"color": "#f8f9fa"});
+    $('.navbar-brand').css({"color": "#f8f9fa"});
+    $('nav').css({"background-color": "#222"});
+    $('#topid > a').css({"color": "#f8f9fa"});
+    $('.klee-icon').attr("src","./assets/kleeIcon192x192.png");
+
+  } else if ($(this).scrollTop() >= $("#links").offset().top - overlap) {
     $('#navbarCollapse > ul > li.nav-item > a').css({"color": "#222"});
     $('.navbar-brand').css({"color": "#222"});
     $('nav').css({"background-color": "#f8f9fa"});

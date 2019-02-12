@@ -37,13 +37,16 @@
             <a class="nav-link" href="#symbolic-execution">Symbolic Execution</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#resumable">Resumable Symbolic Execution</a>
+            <a class="nav-link" href="#resumable">Frank's Work</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#pseudo">Pseudocode</a>
+            <a class="nav-link" href="#pseudo">Example</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#links">Links</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Twitter</a>
           </li>
         </ul>
       </div>
@@ -90,9 +93,7 @@
         <div class="spacer-black"></div>
         <br>
         <div class="row">
-          <div class="col-md-2">
-          </div>
-          <div class="col-md-8">
+          <div class="col-md-10">
             <p><strong>Symbolic execution is a method of auto-testing a program by passing in variable inputs to a function.</strong> It will then use an interpreter to run through the function or program. When a conditional statement is reached, it will branch, limiting the scope of the variable input to that which either causes a true or false outcome for the conditional statement, depending on the requirements of that branch.</p>
     <br>
             <p>The current best implementation of this system is the KLEE program, which has been used to test Unix library files and has achieved high levels of program coverage. It was able to find several bugs within the files and then provided test cases based on the scope of the various inputs at that particular branch.</p>
@@ -110,21 +111,28 @@
     <section id="resumable">
       <div class="container-fluid">
         <br><br>
-        <h1>Resumable Symbolic Execution</h1>
+        <h1>Frank's Work</h1>
         <div class="spacer-white"></div>
         <br>
-        <p><strong>The main obstacle to overcome in Symbolic Execution regards the fact that to test every possible path of program input for a program is of an ever-increasing exponential complexity,</strong> and hence becomes very time consuming. It becomes infeasible therefore to test immensely long programs, over and over whenever the slightest alteration is made to the code base.
-          It would be advantageous to have an efficient solution to this complexity problem – hence Resumable Symbolic Execution.</p>
-        <p>Whilst not decreasing the overall complexity, Resumable Symbolic Execution allows the previously generated code paths to be saved, so that whenever a change is committed to the code, the entire tree does not have to be generated from scratch, rather, it can be extended from the prior generated tree, dramatically decreasing execution time in the long run.
-          This allows for much easier scaling for larger programs, especially if they have been built from scratch with the testing added progressively.</p>
-        <p>The present implementation of this is as an add-on to the KLEE symbolic virtual machine, creating Resumable Paths from the intermediate representation (LLVM) of languages like C++.</p>
+        <div class="row">
+          <div class="col-md-10">
+            <p><strong>The main obstacle to overcome in Symbolic Execution regards the fact that to test every possible path of program input for a program is of an ever-increasing exponential complexity,</strong> and hence becomes very time consuming. It becomes infeasible therefore to test immensely long programs, over and over whenever the slightest alteration is made to the code base.
+              It would be advantageous to have an efficient solution to this complexity problem – hence Resumable Symbolic Execution.</p>
+<br>
+            <p>Whilst not decreasing the overall complexity, Resumable Symbolic Execution allows the previously generated code paths to be saved, so that whenever a change is committed to the code, the entire tree does not have to be generated from scratch, rather, it can be extended from the prior generated tree, dramatically decreasing execution time in the long run.
+              This allows for much easier scaling for larger programs, especially if they have been built from scratch with the testing added progressively.</p>
+<br>
+            <p>The present implementation of this is as an add-on to the KLEE symbolic virtual machine, creating Resumable Paths from the intermediate representation (LLVM) of languages like C++.</p>
+          </div>
+          <div class="col-md-2">
+          </div>
       </div>
     </section>
 
     <section id="pseudo">
       <div class="container-fluid">
         <br><br>
-        <h1>Pseudocode</h1>
+        <h1>Example of KLEE</h1>
         <div class="spacer-black"></div>
         <br>
         <p>The following is a function, in C, detailing how to get the sign of a given integer input, along with the symbolic execution tree that represents how the KLEE program would interpret the function. Each if statement is represented by a branch in the tree and with alpha acting as the variable input, the way this is limited is detailed on the side of each branch.</p>
@@ -150,7 +158,7 @@
                   </pre>
                 </div>
                 <div class="col-sm-5">
-                  <img src="assets/treeDiagram.png" alt="Symbolic execution tree">
+                  <img src="assets/treeDiagram.png" alt="Symbolic execution tree" width=100%>
                 </div>
             </div>
       </div>
@@ -172,7 +180,13 @@
           <div class="col-md-2">
           </div>
           <div class="col-md-8">
-            <a class="twitter-timeline" data-height="700" data-theme="light" href="https://twitter.com/f_busse?ref_src=twsrc%5Etfw">Tweets by f_busse</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a class="twitter-timeline" data-height="1000" data-theme="light" href="https://twitter.com/f_busse?ref_src=twsrc%5Etfw">Tweets by f_busse</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
           <div class="col-md-2">
           </div>

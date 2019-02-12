@@ -89,6 +89,9 @@ body > nav {
   color: #222;
 }
 
+#treeD {
+  width: 5%;
+}
 /* #symbolic-execution > .container-fluid > .flex-row > .p-1 {
   flex: 1
 }
