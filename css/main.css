@@ -19,7 +19,7 @@ body > nav {
 
 .navbar.navbar-inverse.navbar-toggleable-md.navbar-bg-inverse.fixed-top > .navbar-brand {
   font-size: 2em;
-  color: #222;
+  color: #fff;
   transition-duration: 0.4s;
 }
 
