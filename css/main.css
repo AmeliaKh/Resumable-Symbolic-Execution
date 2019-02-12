@@ -23,9 +23,13 @@ body > nav {
   transition-duration: 0.4s;
 }
 
+#title > a {
+  color:#f8f9fa;
+  text-decoration: none;
+}
 
 #topid > a{
-  color:white;
+  color:#f8f9fa;
 }
 
 
